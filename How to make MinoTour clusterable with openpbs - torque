@@ -1,0 +1,18 @@
+this gist contains all the script modifications which are needed
+for minoTour's most computational intense components mT_control and minUP
+to use openpbs/torque and run on the computenodes instead of constantly killing our webserver
+
+i made this in a quickhack/hardcoded changes fashion
+
+
+files to modify :
+
+to make minUP alignments clusterable
+checkout linminup from github and create a new subfolder
+$ git clone https://github.com/minoTour/linminUP.git
+$ cd linminUP/modules
+
+*  modules/processRefFasta.py   modifing from 0b6f59d
+*
+*
+TODO
